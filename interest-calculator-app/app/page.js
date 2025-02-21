@@ -9,12 +9,14 @@ export default function MainPage() {
             <h1>Investment calculator</h1>
           </div>
           <div className="components">
-            Initial Investment
-            <br/>
-            <input className="initialInvestment"></input>
-            <input className="monthlyInvestment"></input>
-            <input className="aplicationPeriod"></input>
-            <input className="interestRate"></input>
+            <div className="firstLine">
+              <input className="initialInvestment"></input>
+              <input className="monthlyInvestment"></input>
+            </div>
+            <div className="secondLine">
+              <input className="aplicationPeriod"></input>
+              <input className="interestRate"></input>
+            </div>
           </div>
         </div>
       </main>
