@@ -1,0 +1,29 @@
+body {
+    font-family: monospace;
+    background-color: grey;
+}
+
+input {
+    caret-color: grey;
+    border-color: grey;
+    border-style: solid;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 20px;
+    width: 100px;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(249, 186, 197);
+    border-radius: 20px;
+    height: 700px;
+    width: 700px;
+}
+
+h1 {
+    display: flex;
+    align-items: flex-start;
+}
