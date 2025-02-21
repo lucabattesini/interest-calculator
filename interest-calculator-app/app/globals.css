@@ -1,6 +1,6 @@
 body {
     font-family: monospace;
-    background-color: grey;
+    background-color: rgb(178, 178, 178);
 }
 
 input {
@@ -9,21 +9,34 @@ input {
     border-style: solid;
     padding: 10px;
     font-size: 20px;
-    border-radius: 10px;
-    height: 20px;
-    width: 100px;
+    border-radius: 5px;
+    height: 16px;
+    width: 120px;
+}
+
+h1 {
+    color: rgb(62, 62, 62);
+    font-weight: 1000;
 }
 
 .mainDiv {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: rgb(249, 186, 197);
     border-radius: 20px;
     height: 700px;
     width: 700px;
 }
 
-h1 {
+.header {
+    text-align: center;
+    width: 100%;
+}
+
+.components {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
 }
