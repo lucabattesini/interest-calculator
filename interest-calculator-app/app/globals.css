@@ -8,15 +8,22 @@ input {
     border-color: grey;
     border-style: solid;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 5px;
-    height: 16px;
-    width: 120px;
+    height: 12px;
+    width: 180px;
 }
 
 h1 {
     color: rgb(62, 62, 62);
     font-weight: 1000;
+}
+
+label {
+    color: rgb(62, 62, 62);
+    display: block;
+    font-weight: bold;
+    margin-left: 5px;
 }
 
 .mainDiv {

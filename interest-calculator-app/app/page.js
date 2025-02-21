@@ -10,7 +10,10 @@ export default function MainPage() {
           </div>
           <div className="components">
             <div className="firstLine">
-              <input className="initialInvestment"></input>
+              <label for="investment">Initial investment</label>
+              <input className="initialInvestment" placeholder="Type"></input>
+              
+              <label for="investment">Monthly investment</label>
               <input className="monthlyInvestment"></input>
             </div>
             <div className="secondLine">
