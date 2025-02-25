@@ -24,6 +24,9 @@ export default function MainPage() {
               <input className="interestRate" placeholder="0,00%"></input>
             </div>
           </div>
+          <div className="submitButton">
+              <button>Calculate</button>
+          </div>
         </div>
       </main>
     </body>
