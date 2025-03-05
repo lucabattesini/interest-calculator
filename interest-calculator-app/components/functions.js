@@ -1,13 +1,13 @@
-export default function InterestCalculation(InitialInvestment, MonthlyInvestment, 
-    AplicationPeriod, InterestRate) {
+export default function InterestCalculation(initialInvestment, monthlyInvestment, 
+    aplicationPeriod,interestRate) {
 
-    const repetitions = AplicationPeriod
-    let monthlyResult = []
-    let interest = 0
+    const repetitions = aplicationPeriod;
+    let monthlyResult = [];
+    let interest = 0;
 
     for (let i = 0; i < repetitions; i++) {
-        interest += MonthlyInvestment 
-        interest = InitialInvestment * InterestRate * 1
+        interest += monthlyInvestment 
+        interest = initialInvestment * interestRate * 1
 
         monthlyResult.push(interest)
     }
