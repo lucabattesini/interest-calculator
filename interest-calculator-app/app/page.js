@@ -1,8 +1,7 @@
-
-
 export default function MainPage() {
+  // Estado
+  // Onclick functions
   return (
-    <body>
       <main>
         <div className="mainDiv">
           <div className="header">
@@ -10,17 +9,17 @@ export default function MainPage() {
           </div>
           <div className="components">
             <div className="firstLine">
-              <label for="investment">Initial investment</label>
+              <label>Initial investment</label>
               <input className="initialInvestment" type="number" placeholder="0,00"></input>
 
-              <label for="investment">Monthly investment</label>
+              <label>Monthly investment</label>
               <input className="monthlyInvestment" type="number" placeholder="0,00"></input>
             </div>
             <div className="secondLine">
-              <label for="investment">Aplication period</label>
+              <label>Aplication period</label>
               <input className="aplicationPeriod" type="number" placeholder="0"></input>
               
-              <label for="investment">Interest rate</label>
+              <label>Interest rate</label>
               <input className="interestRate" type="number" placeholder="0,00%"></input>
             </div>
           </div>
@@ -29,6 +28,5 @@ export default function MainPage() {
           </div>
         </div>
       </main>
-    </body>
   );
 }
