@@ -1,3 +1,6 @@
+import {InterestCalculation} from "../components/functions";
+import { useState } from "react";
+
 export default function MainPage() {
   // Estado
   // Onclick functions
