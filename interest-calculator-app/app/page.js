@@ -1,14 +1,23 @@
 
 'use client';
 
+// Import the main function
 import {InterestCalculation} from "../components/functions";
 import { useState } from "react";
 
 export default function MainPage() {
   // Estado
   // Onclick functions
-  const [initialInvestment, setInitialInvestment] = useState(0)
 
+  // Declare the the main input vars
+  const [initialInvestment, setInitialInvestment] = useState(0)
+  const [monthlyInvestment, setMonthlyInvestment] = useState(0)
+  const [aplicationPeriod, setAplicationPeriod] = useState(0)
+  const [interestRate, setInterestRate] = useState(0)
+
+  
+
+  // Main page html
   return (
       <main>
         <div className="mainDiv">
