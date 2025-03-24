@@ -1,9 +1,14 @@
+
+'use client';
+
 import {InterestCalculation} from "../components/functions";
 import { useState } from "react";
 
 export default function MainPage() {
   // Estado
   // Onclick functions
+  const [initialInvestment, setInitialInvestment] = useState(0)
+
   return (
       <main>
         <div className="mainDiv">
