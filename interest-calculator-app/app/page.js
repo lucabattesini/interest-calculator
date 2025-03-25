@@ -1,4 +1,4 @@
-// Indica que esse é um componente de cliente
+// Indicate that this is a client component
 'use client';
 
 // Import the main function
@@ -15,8 +15,8 @@ export default function MainPage() {
   const [aplicationPeriod, setAplicationPeriod] = useState(0);
   const [interestRate, setInterestRate] = useState(0);
 
-  // Vai ser chamada quando o usuário digitar o input
-  const handleInitialInvestmentChange = (event) => setInitialInvestment(event.target.value); // Atualiza o estado da const com o valor do input
+  // Will be called when the user type in the input
+  const handleInitialInvestmentChange = (event) => setInitialInvestment(event.target.value); // Update the const status with the input value
   const handleMonthlyInvestmentChange = (event) => setInitialInvestment(event.target.value);
   const handleAplicationPeriodChange = (event) => setInitialInvestment(event.target.value);
   const handleInterestRateChange = (event) => setInitialInvestment(event.target.value);
