@@ -34,7 +34,6 @@ export default function MainPage() {
               <label>Initial investment</label>
               <input className="initialInvestment" placeholder="0,00" 
               type="number" value={initialInvestment} onChange={handleInitialInvestmentChange}/>
-              <p> Seu numero é {initialInvestment}</p>
 
               <label>Monthly investment</label>
               <input className="monthlyInvestment" placeholder="0,00" 
