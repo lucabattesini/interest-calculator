@@ -16,9 +16,10 @@ export default function MainPage() {
   const [interestRate, setInterestRate] = useState(0);
 
   // Vai ser chamada quando o usuário digitar o input
-  const handleChange = (event) => {
-    setInitialInvestment(event.target.value); // Atualiza o estado da const com o valor do input
-  };
+  const handleInitialInvestmentChange = (event) => setInitialInvestment(event.target.value); // Atualiza o estado da const com o valor do input
+  const handleMonthlyInvestmentChange = (event) => setInitialInvestment(event.target.value);
+  const handleAplicationPeriodChange = (event) => setInitialInvestment(event.target.value);
+  const handleInterestRateChange = (event) => setInitialInvestment(event.target.value);
 
   // Main page html
   return (
@@ -32,19 +33,22 @@ export default function MainPage() {
             <div className="firstLine">
               <label>Initial investment</label>
               <input className="initialInvestment" placeholder="0,00" 
-              type="number" value={initialInvestment} onChange={handleChange}/>
+              type="number" value={initialInvestment} onChange={handleInitialInvestmentChange}/>
               <p> Seu numero é {initialInvestment}</p>
 
               <label>Monthly investment</label>
-              <input className="monthlyInvestment" type="number" placeholder="0,00"></input>
+              <input className="monthlyInvestment" placeholder="0,00" 
+              type="number" value={monthlyInvestment} onChange={handleMonthlyInvestmentChange}/>
             </div>
 
             <div className="secondLine">
               <label>Aplication period</label>
-              <input className="aplicationPeriod" type="number" placeholder="0"></input>
+              <input className="aplicationPeriod" placeholder="0" 
+              type="number" value={aplicationPeriod} onChange={handleAplicationPeriodChange}/>
               
               <label>Interest rate</label>
-              <input className="interestRate" type="number" placeholder="0,00%"></input>
+              <input className="interestRate" placeholder="0,00%"
+              type="number" value={interestRate} onChange={handleInterestRateChange}/>
             </div>
           </div>
 
