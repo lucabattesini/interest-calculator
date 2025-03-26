@@ -42,27 +42,27 @@ export default function MainPage() {
             <div className="firstLine">
               <label>Initial investment</label>
               <input className="initialInvestment" placeholder="0,00" 
-              type="number" value={initialInvestment} onChange={handleInitialInvestmentChange}/>
+              type="number" step={1} value={initialInvestment} onChange={handleInitialInvestmentChange}/>
 
               <label>Monthly investment</label>
               <input className="monthlyInvestment" placeholder="0,00" 
-              type="number" value={monthlyInvestment} onChange={handleMonthlyInvestmentChange}/>
+              type="number" step={1} value={monthlyInvestment} onChange={handleMonthlyInvestmentChange}/>
             </div>
 
             <div className="secondLine">
               <label>Aplication period</label>
               <input className="aplicationPeriod" placeholder="0" 
-              type="number" value={aplicationPeriod} onChange={handleAplicationPeriodChange}/>
+              type="number" step={1} value={aplicationPeriod} onChange={handleAplicationPeriodChange}/>
               
               <label>Interest rate</label>
               <input className="interestRate" placeholder="0,00%"
-              type="number" value={interestRate} onChange={handleInterestRateChange}/>
+              type="number" step={1} value={interestRate} onChange={handleInterestRateChange}/>
             </div>
           </div>
 
           <div className="submitButton">
               <button onClick={handleButtonClick}>Calculate</button>
-              
+
               {resultButton !== null && <h2>Resultado: {resultButton}</h2>}
           </div>
         </div>
