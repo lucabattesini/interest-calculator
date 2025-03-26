@@ -1,15 +1,24 @@
 export function interestCalculation(initialInvestment, monthlyInvestment, 
     aplicationPeriod,interestRate) {
+    
+    // Turning the function vars into real numbers
+    const functionInitialInvestment = Number(initialInvestment)
+    const functionMonthlyInvestment = Number(monthlyInvestment)
 
-    const repetitions = aplicationPeriod;
-    let monthlyResult = [];
-    let interest = 0;
+    // vars
+    let i = 0
+    let fixValue = Number(functionInitialInvestment + functionMonthlyInvestment)
+    let interestResult = Number(0)
 
-    for (let i = 0; i < repetitions; i++) {
-        interest += monthlyInvestment 
-        interest = initialInvestment * interestRate * 1
+    interestRate = Number(interestRate / 100)
 
-        monthlyResult.push(interest)
+    // Loop
+    while (aplicationPeriod >= i + 2) {
+        interestResult = fixValue * interestRate
+
+        fixValue = fixValue + interestResult + functionMonthlyInvestment
+        i++;
     }
-    return monthlyResult
+
+    return fixValue
 }
