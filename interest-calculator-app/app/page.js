@@ -17,9 +17,9 @@ export default function MainPage() {
 
   // Will be called when the user type in the input
   const handleInitialInvestmentChange = (event) => setInitialInvestment(event.target.value); // Update the const status with the input value
-  const handleMonthlyInvestmentChange = (event) => setInitialInvestment(event.target.value);
-  const handleAplicationPeriodChange = (event) => setInitialInvestment(event.target.value);
-  const handleInterestRateChange = (event) => setInitialInvestment(event.target.value);
+  const handleMonthlyInvestmentChange = (event) => setMonthlyInvestment(event.target.value);
+  const handleAplicationPeriodChange = (event) => setAplicationPeriod(event.target.value);
+  const handleInterestRateChange = (event) => setInterestRate(event.target.value);
 
   // Main page html
   return (
