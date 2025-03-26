@@ -2,7 +2,7 @@
 'use client';
 
 // Import the main function
-import {InterestCalculation} from "../components/functions";
+import {interestCalculation} from "../components/functions";
 import { useState } from "react";
 
 export default function MainPage() {
@@ -15,11 +15,20 @@ export default function MainPage() {
   const [aplicationPeriod, setAplicationPeriod] = useState(0);
   const [interestRate, setInterestRate] = useState(0);
 
+  // Button const
+  const [resultButton, setResultButton] = useState(null);
+
   // Will be called when the user type in the input
   const handleInitialInvestmentChange = (event) => setInitialInvestment(event.target.value); // Update the const status with the input value
   const handleMonthlyInvestmentChange = (event) => setMonthlyInvestment(event.target.value);
   const handleAplicationPeriodChange = (event) => setAplicationPeriod(event.target.value);
   const handleInterestRateChange = (event) => setInterestRate(event.target.value);
+
+  // Button function
+  const handleButtonClick = () => {
+    setResultButton(interestCalculation(initialInvestment, 
+      monthlyInvestment, aplicationPeriod,interestRate));
+  };
 
   // Main page html
   return (
@@ -52,7 +61,9 @@ export default function MainPage() {
           </div>
 
           <div className="submitButton">
-              <button>Calculate</button>
+              <button onClick={handleButtonClick}>Calculate</button>
+              
+              {resultButton !== null && <h2>Resultado: {resultButton}</h2>}
           </div>
         </div>
       </main>
