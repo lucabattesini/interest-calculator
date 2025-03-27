@@ -62,9 +62,9 @@ export default function MainPage() {
 
           <div className="submitButton">
               <button onClick={handleButtonClick}>Calculate</button>
-
-              {resultButton !== null && <h2>Resultado: {resultButton}</h2>}
           </div>
+
+          {resultButton !== null && <h2>Resultado: {resultButton}</h2>}
         </div>
       </main>
   );
