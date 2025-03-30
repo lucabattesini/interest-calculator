@@ -75,3 +75,20 @@ button {
     justify-content: center;
     width: 100%;
 }
+
+.result {
+    background-color: white;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 70px;
+    width: 160px;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+}
