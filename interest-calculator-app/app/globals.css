@@ -9,6 +9,8 @@ input {
     margin: 0px 20px;
     margin-bottom: 25px;
     font-size: 13px;
+    font-weight: 800;
+    color: #222222;
     border-radius: 8px;
     height: 19px;
     width: 190px;
@@ -79,6 +81,7 @@ button {
 .result {
     background-color: white;
     text-align: center;
+    color: #222222;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 60px;
