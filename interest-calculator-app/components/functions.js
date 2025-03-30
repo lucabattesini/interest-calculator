@@ -10,6 +10,8 @@ export function interestCalculation(initialInvestment, monthlyInvestment,
     // let fixValue = Number(functionInitialInvestment + functionMonthlyInvestment)
     let interestResult = Number(0)
     let addedValue = functionInitialInvestment
+    let totalInterest = Number(0)
+    let totalInvested = Number(0)
 
     interestRate = Number(interestRate / 100)
 
@@ -18,12 +20,17 @@ export function interestCalculation(initialInvestment, monthlyInvestment,
         addedValue = addedValue + functionMonthlyInvestment
         interestResult = addedValue * interestRate
 
-        console.log(interestResult)
-
+        totalInterest = totalInterest + interestResult
         addedValue = addedValue + interestResult
 
         i++;
     }
 
-    return addedValue
+    totalInvested = addedValue - totalInterest
+
+    return {
+        addedValue,
+        totalInterest,
+        totalInvested
+    };
 }
