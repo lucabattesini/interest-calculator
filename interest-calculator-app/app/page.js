@@ -64,9 +64,9 @@ export default function MainPage() {
               <button onClick={handleButtonClick}>Calculate</button>
           </div>
           <div className="results">
-            {resultButton && resultButton.addedValue !== null && <h2 className="result">Valor total final: R${resultButton.addedValue}</h2>}
-            {resultButton && resultButton.totalInterest !== null && <h2 className="result">Valor em juroz: R${resultButton.totalInterest}</h2>}
-            {resultButton && resultButton.totalInvested !== null && <h2 className="result">Valor total investido: R${resultButton.totalInvested}</h2>}
+            {resultButton && resultButton.addedValue !== null && <h2 className="result">Valor total final: <br/>R${resultButton.addedValue}</h2>}
+            {resultButton && resultButton.totalInterest !== null && <h2 className="result">Valor em juroz: <br/>R${resultButton.totalInterest}</h2>}
+            {resultButton && resultButton.totalInvested !== null && <h2 className="result">Valor total investido: <br/>R${resultButton.totalInvested}</h2>}
           </div>
         </div>
       </main>
