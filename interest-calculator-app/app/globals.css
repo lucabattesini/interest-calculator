@@ -11,7 +11,7 @@ input {
     font-size: 13px;
     font-weight: 800;
     color: #222222;
-    border-radius: 8px;
+    border-radius: 5px;
     height: 19px;
     width: 190px;
 }
@@ -42,7 +42,7 @@ button {
     color: whitesmoke;
     font-weight: bold;
     border: 0;
-    border-radius: 12px;
+    border-radius: 9px;
     font-size: 16px;
     height: 50px;
     width: 100px;
@@ -54,7 +54,7 @@ button {
     align-items: center;
     background-color: rgb(255, 255, 255, 0.6);
     backdrop-filter: blur(50px);
-    border-radius: 30px;
+    border-radius: 17px;
     margin-top: 50px;
     height: 995px;
     width: 600px;
@@ -79,10 +79,13 @@ button {
 }
 
 .mainInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     text-align: center;
     color: #222222;
-    margin-left: 20px;
+    line-height: 25px;
     margin-right: 20px;
     margin-top: 20px;
     border-radius: 10px;
@@ -91,9 +94,14 @@ button {
     width: 160px;
 }
 
+.mainInfo:last-child {
+    margin-right: 0px;
+}
+
 .result {
     display: flex;
     align-items: start;
+    justify-content: center;
     background-color: #7FB77E;
     border-radius: 20px;
     margin-top: 30px;
