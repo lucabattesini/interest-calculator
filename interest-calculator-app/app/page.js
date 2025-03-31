@@ -66,7 +66,7 @@ export default function MainPage() {
           <div className="result">
             {resultButton && resultButton.addedValue !== null && <h2 className="mainInfo">Valor total final: <br/>R${resultButton.addedValue.toFixed(2)}</h2>}
             {resultButton && resultButton.totalInterest !== null && <h2 className="mainInfo">Valor em juroz: <br/>R${resultButton.totalInterest.toFixed(2)}</h2>}
-            {resultButton && resultButton.totalInvested !== null && <h2 className="mainInfo">Valor total investido: <br/>R${resultButton.totalInvested.toFixed(2)}</h2>}
+            {resultButton && resultButton.totalInvested !== null && <h2 className="mainInfo">Valor investido: <br/>R${resultButton.totalInvested.toFixed(2)}</h2>}
           </div>
         </div>
       </main>
