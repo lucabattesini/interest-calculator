@@ -56,7 +56,7 @@ button {
     backdrop-filter: blur(50px);
     border-radius: 17px;
     margin-top: 50px;
-    height: 990px;
+    height: 500px;
     width: 600px;
 }
 
@@ -105,6 +105,6 @@ button {
     background-color: #7FB77E;
     border-radius: 20px;
     margin-top: 30px;
-    height: 600px;
+    height: 110px;
     width: 550px;
 }
